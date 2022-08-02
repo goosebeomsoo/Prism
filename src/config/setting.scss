@@ -1,0 +1,12 @@
+$header-height: 128px;
+
+$cl-main : #CE328A;
+$cl-white : #FFFFFF;
+$cl-black : #191919;
+$cl-gray : #545454;
+
+@mixin font-regular {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+}
