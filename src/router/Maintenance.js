@@ -17,6 +17,7 @@ const Maintenance = () => {
              autoPlay
              loop
              muted
+             playsInline
              src={mainVideo}>
             </video>
         </div>
