@@ -34,9 +34,6 @@ const Home = () => {
     return (
         <div className="home-page page">
             <MainBanner video={main_video}/>
-            <ImageText photo={camera01}/>
-            <Masonry masonryLists={masonryLists}/>
-            <RichText/>
         </div>
     )
 }

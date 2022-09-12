@@ -1,19 +1,13 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 
-import logo from '../assets/icon/logo.svg';
-
-const Header = () => {
+const Header = (props) => {
     const [currentTab, setCurrentTab] = useState(0);
 
     const lists = [
         { 
             link : "/work", 
             name : "WORK"
-        },
-        { 
-            link : "/client", 
-            name : "CLIENT"
         },
         { 
             link : "/process", 
@@ -44,7 +38,7 @@ const Header = () => {
             <div className="header-container container">
                 <div className="header-logo-content">
                     <Link to="/">
-                        <img src={logo} alt="brand logo"/>
+                        <img src={props.header_logo} alt="brand logo"/>
                     </Link>
                 </div>
                 <ul>

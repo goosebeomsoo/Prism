@@ -1,4 +1,4 @@
-import logo from '../assets/icon/logo.svg';
+import logo from '../assets/icon/header-logo.svg';
 import mainVideo from '../assets/video/main-video.mp4';
 
 const Maintenance = () => {
@@ -10,7 +10,7 @@ const Maintenance = () => {
                 </div>
 
                 <p className="copy-small">
-                    Sorry, We are under maintenece currently.
+                    Website renewal work is in progress. <br />We'll be back soon
                 </p>
             </div>
             <video

@@ -1,7 +1,16 @@
-const Video = (props) => {
+import { forwardRef } from "react";
+
+const Video = (props, ref) => {
     return (
-        <div className="video-block">
-            <div className="copy-content">
+        <div className="video-block" onClick = {(e) => {
+            props.clickPopup();
+            console.log(e.target.dataset.id);
+            console.log(ref);
+        }} >
+            <div className="thumb">
+                <img src={props.thumb} alt="s" />
+            </div>
+            <div className="copy-content" data-id={props.link}>
                 <h3 className="copy-heading">
                     {props.title}
                 </h3>
@@ -13,4 +22,4 @@ const Video = (props) => {
     )
 }
 
-export default Video;
+export default forwardRef(Video);

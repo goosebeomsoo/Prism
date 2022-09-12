@@ -3,13 +3,13 @@ import Button from "../components/elements/Button";
 const Client = () => {
     const clientList = [
         {
-            img : "", 
-            alt : "", 
+            img : "asdf", 
+            alt : "asdf", 
             key: 1
         },
         {
-            img : "", 
-            alt : "", 
+            img : "asdf", 
+            alt : "asdf", 
             key: 2
         },
         {
@@ -31,7 +31,7 @@ const Client = () => {
     );
 
     return (
-        <div className="client">
+        <div className="client-page page">
             <section className="client-section section">
                 <div className="client-container container">
                     <div className="client-content">

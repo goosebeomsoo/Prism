@@ -1,0 +1,20 @@
+@import '../../components/elements/scss/video.scss';
+
+.work-page{
+    .work-section {
+        .work-container {
+            .work-content {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .popup {
+        display: none;
+    }
+
+    .popup-open {
+        display: block;
+    }
+}

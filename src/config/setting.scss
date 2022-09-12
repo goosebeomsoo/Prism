@@ -5,8 +5,23 @@ $cl-white : #FFFFFF;
 $cl-black : #191919;
 $cl-gray : #545454;
 
-@mixin font-regular {
+@mixin font-heading {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+    color: $cl-white;
+}
+
+@mixin font-sub-heading {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    color: $cl-white;
+}
+
+@mixin font-body {
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
+    color: #eee;
 }

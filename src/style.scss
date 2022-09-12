@@ -11,9 +11,16 @@
 @import "./router/scss/client.scss";
 @import "./router/scss/process.scss";
 
+body {
+    background: $cl-black;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
 
 .page {
-    margin-top: $header-height;
 }
 
 .container {
@@ -22,10 +29,6 @@
     margin: 0 auto;
 }
 
-img {
-    display: block;
-    width: 100%;
-}
 
 .button  {
     display: flex;
@@ -33,16 +36,19 @@ img {
     align-items: center;
     position: relative;
     width: 240px;
-    padding: 8px 0;
+    padding: 12px 0;
     border-radius: 8px;
     box-shadow: 0px 8px 20px 5px #0002;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(6px);
     transition: 0.3s ease;
 
     &:hover {
         i {
-            right: 54px;
+            right: 50px;
         }
-        box-shadow: 0px 8px 20px 5px #0004;
+        box-shadow: 0px 8px 20px 5px #0003;
+        background: rgba(255, 255, 255, 0.7);
     }
 
     span {
@@ -54,8 +60,20 @@ img {
     i {
         position: absolute;
         width: 18px;
-        top: 10px;
-        right: 60px;
+        top: 13px;
+        right: 54px;
         transition: 0.3s ease;
     }
+}
+
+.copy-heading {
+    @include font-heading;
+}
+
+.copy-sub-heading {
+    @include font-sub-heading;
+}
+
+.copy-body {
+    @include font-body;
 }
